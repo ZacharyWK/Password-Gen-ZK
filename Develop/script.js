@@ -15,10 +15,10 @@ function writePassword() {
 
 }
 
-let ylow;
-let yup;
-let yspec;
-let ynum;
+let ylow=[];
+let yup=[];
+let yspec=[];
+let ynum=[];
 
 let darts;
 let board=[];
@@ -28,17 +28,17 @@ let Numbahs;
 let lafin;
 
 function generatePassword(){
-    var params = {};
+    
+  var params = {};
 
+    //user input
     params.low = confirm("Use lowercase?");
     params.up = confirm("Use UPERCASE?");
     params.spec = confirm("Use special characters? -!@#$_");
-    params.num = confirm("Use numbers 0-9?");
-    // darts = 
+    params.num = confirm("Use numbers 0-9?"); 
     params.lan = prompt("Please choose length, 8 - 128",);
     
     console.log(params);
-    
     
     if (params.low === true){ylow=lowercase.split(",")} 
     else {};
@@ -48,7 +48,6 @@ function generatePassword(){
     else {};
     if (params.num === true){ynum=numeric.split(",")}
     else {};
-
     if(params.lan > 7 && params.lan < 129){darts = params.lan}
     else{return "Input not in range."};
 
@@ -57,8 +56,10 @@ function generatePassword(){
     console.log(yspec);
     console.log(ynum);
     
-    daBah = ylow.concat(yup,yspec,ynum); 
+    //array from choices
+    daBah = daBah.concat(ylow,yup,yspec,ynum);
 
+    //selector
     for (let index = 0; index < darts; index++) {
       Numbahs = daBah[Math.floor(Math.random()*daBah.length)];
       board.push(Numbahs)
@@ -68,7 +69,9 @@ function generatePassword(){
 
     lafin = board.join("");
 
+    //result
     return lafin
+
 }
 
 // Add event listener to generate button
