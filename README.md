@@ -13,7 +13,7 @@ Tasked to generate a secure and random password that “will run in the browser 
 ## Design
 ![image](https://github.com/ZacharyWK/Password-Gen-ZK/blob/main/Assets/IMG/passgen.JPG)
 No changes were made to the provided UI.
-User inputs are reflected by changing the array which each character of the password is pulled from and the password length  
+User inputs are reflected by changing the password length and the array which each character of the password is pulled from.
 
 ## Links
 * [REPOSITORY](https://github.com/ZacharyWK/Password-Gen-ZK)
