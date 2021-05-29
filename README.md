@@ -16,5 +16,12 @@ No changes were made to the provided UI.
 User inputs are reflected by changing the password length and the array which each character of the password is pulled from.
 
 ## Links
-* [REPOSITORY](https://github.com/ZacharyWK/Password-Gen-ZK)
+[REPOSITORY](https://github.com/ZacharyWK/Password-Gen-ZK)
+```
+https://github.com/ZacharyWK/Password-Gen-ZK
+```
+
 * [DEPLOYED](https://zacharywk.github.io/Password-Gen-ZK/)
+```
+https://zacharywk.github.io/Password-Gen-ZK/
+```
